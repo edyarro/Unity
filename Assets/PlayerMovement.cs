@@ -2,14 +2,16 @@
 
 public class PlayerMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        Debug.Log("On start");
-    }
+    /// <summary>
+    /// Rb
+    /// </summary>
+    public Rigidbody Rb;
 
-    // Update is called once per frame
-    void Update()
+    /// <summary>
+    /// Update is called once per frame
+    /// </summary>
+    void FixedUpdate()
     {
+        this.Rb.AddForce(0, 0, 2000 * Time.deltaTime);
     }
 }
