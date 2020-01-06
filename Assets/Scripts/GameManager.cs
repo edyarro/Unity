@@ -30,6 +30,14 @@ public class GameManager : MonoBehaviour
     }
 
     /// <summary>
+    /// CompleteLevel
+    /// </summary>
+    public void CompleteLevel()
+    {
+        Debug.Log("Level WON");
+    }
+
+    /// <summary>
     /// Restart
     /// </summary>
     private void Restart()
